@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>    
+        <script type="text/javascript">
+var image1 = new Image()
+image1.src = "img_Politics.png"
+var image2 = new Image()
+image2.src = "img_sports.png"
+var image3 = new Image()
+image3.src = "img_fashion.png"
+</script>
+        <style>
+body {
+    background-color: #C8C8C8; rgb(200,200,200);
+}
+
+}
+a {
+    color: blue;
+}
+
+p {
+    font-size: 14px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+span{
+    float: right;
+    color: green;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+</style>
+</head>
+<header>
+    <img src="hindu.jpg" alt="hindu" id="headerlogo" style="width:1300px;height:100px;">
+    <nav>
+        <ul>
+           <li><a href="home.html" target="_self">HOME</a></li>
+       </ul>
+    </nav>
+    <b><span id="time"></span></b>
+</header>
+<body>
+    <p><img width="300" height="200" name="slide" id="img1" /></p>
+<script type="text/javascript">
+        var step=1;
+        function slideit()
+        {
+            document.images.slide.src = eval("image"+step+".src");
+            if(step<3)
+                step++;
+            else
+                step=1;
+            setTimeout("slideit()",2500);
+        }
+        slideit();
+</script>
+<script type="text/javascript">
+document.getElementById("time").innerHTML = formatAMPM();
+
+function formatAMPM() {
+    var date = new Date();
+    var hours = date.getHours();
+    var days = date.getDay(); 
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12; 
+    minutes = minutes < 10 ? '0'+minutes : minutes;
+    var strTime = date + ' ' + hours + ':' + minutes + ' ' + ampm;
+    return strTime;
+}
+    
+    </script>
+   <section>
+    <h1>INDIA WON WORLD CUP<h1>
+        <p>INDIA won by 6 wickets against pakistan</p>
+        <p>man of the match virat kohli</p>
+        <p>man of the series dhoni</p>
+    </section>
+    <article>
+        <h2>BJP won elections</h2>
+        <p>Narendra modi is the prime minister of INDIA</p>
+        <p>BJP has won 300 mp seats over 542 parliament seats and congress won just 50 seats</p>
+        <figure>
+            <img src="modi.jpeg" alt="Modi picture" style="width:150px;height:150px;">
+                <figcaption> fig 1.1 Modi PM</figcaption>
+            </figure>
+        </article>
+  </body>
+
+
+
+    </body>
+</html>

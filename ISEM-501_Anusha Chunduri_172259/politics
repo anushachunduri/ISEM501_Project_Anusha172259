@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<header>
+	<img src="hindu.jpg" alt="java training" style="width:1300px;height:100px;">
+</header>
+<nav>
+<ul>
+<a href="home.html" target="_self">HOME</a>
+<a href="headlines.html" target="_self">HEADLINES</a>
+<a href="sports.html" target="_blank">SPORTS </a>
+<a href="politics.html" target="_blank">POLITICS</a>
+</ul>
+</nav>
+<h1> POLITICS </h1>
+</head>
+
+<main>
+<h2>BJP won 2015 elections</h2>
+<p>BJP won the elections with high majority almost 300 seats</p>
+<figure>
+	<img src="bjp.jpg" alt="bjp image" style=width:200px;height;200px;>
+	<figcaption>fig 1.1 worldcup</figcaption>
+</figure>
+<h2>Corruption increasing in INDIA</h2>
+<p> almost 25l crores of rupees are deposited in swiss banks by indians</p>
+<figure>
+	<img src="corruption.jpg" alt="corruption image" style=width:200px;height;200px;>
+	<figcaption>fig 1.2 dhoni</figcaption>
+</figure>
+
+</main>
+</html>
